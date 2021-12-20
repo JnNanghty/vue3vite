@@ -1,11 +1,11 @@
 <style scoped>
 .aside-container{
   width: 200px;
-  background: #ff0;
   float: left;
   height: 100vh;
   overflow: hidden;
   padding-top: 30px;
+  border-right: 1px solid #000;
 }
 .right-container{
   float: left;
