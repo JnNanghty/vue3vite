@@ -1,10 +1,10 @@
 import {createRouter, createWebHistory} from "vue-router";
-
+import Layout from "../Layout/Layout.vue";
 
 const routes = [
   {
     path: '/',
-    component: () => import('../Layout/Layout.vue'),
+    component: Layout,
     redirect: '/home',
     meta: {name: '首页', icon: '', hidden: false},
     children: [
