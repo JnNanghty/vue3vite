@@ -1,5 +1,5 @@
 <style lang="stylus" scoped>
-.aside-container{
+.aside-container {
   width: 200px;
   float: left;
   height: 100vh;
@@ -8,15 +8,27 @@
   border-right: 1px solid #000;
   box-sizing border-box
 }
-.right-container{
+
+.right-container {
   float: left;
   width calc(100% - 200px)
   box-sizing border-box
-  .nav-container{
+
+  .nav-container {
     width: 100%
     height 120px;
     border-bottom 1px solid #000000
   }
+}
+
+.component-fade-enter-active,
+.component-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.component-fade-enter-from,
+.component-fade-leave-to {
+  opacity: 0;
 }
 </style>
 <template>
@@ -28,7 +40,11 @@
       <LayoutNav></LayoutNav>
     </nav>
     <main class="main-container">
-      <router-view></router-view>
+      <transition name="component-fade">
+        <router-view v-slot="{ Component }">
+          <component :is="Component"/>
+        </router-view>
+      </transition>
     </main>
     <footer class="footer-container"></footer>
   </div>
