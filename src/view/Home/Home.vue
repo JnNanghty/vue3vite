@@ -16,9 +16,11 @@
 }
 </style>
 <template>
-  <transition-group name="list" appear tag="div">
-    <h1 v-for="item in list" :key="item">HHHHHHHHHHHHHHH{{ item }}OOOOOOOOOOOOOOOOOO</h1>
-  </transition-group>
+  <div>
+    <transition-group name="list" appear tag="div">
+      <h1 v-for="(item, index) in list" :key="index">HHHHHHHHHHHHHHH{{ item }}OOOOOOOOOOOOOOOOOO</h1>
+    </transition-group>
+  </div>
 </template>
 
 <script setup>

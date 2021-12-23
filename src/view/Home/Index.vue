@@ -57,8 +57,10 @@ h1{
 }
 </style>
 <template>
-  <div class="box"></div>
-  <h1>转圈圈</h1>
+  <div>
+    <div class="box"></div>
+    <h1>转圈圈</h1>
+  </div>
 </template>
 
 <script setup>

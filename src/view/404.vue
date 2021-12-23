@@ -9,7 +9,9 @@
 <script setup>
 import router from "../router";
 const goHome = () => {
-  router.push('/home')
+  router.push({
+    name: 'homeIndex'
+  })
 }
 </script>
 

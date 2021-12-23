@@ -40,11 +40,11 @@
       <LayoutNav></LayoutNav>
     </nav>
     <main class="main-container">
-      <transition name="component-fade">
-        <router-view v-slot="{ Component }">
+      <router-view v-slot="{ Component }">
+        <transition name="component-fade">
           <component :is="Component"/>
-        </router-view>
-      </transition>
+        </transition>
+      </router-view>
     </main>
     <footer class="footer-container"></footer>
   </div>

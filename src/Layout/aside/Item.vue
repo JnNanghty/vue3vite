@@ -12,14 +12,15 @@
   transform-origin: top center;
   padding-left: 10px
 }
-.item-label{
+
+.item-label {
   .show-icon {
     margin-right: 20px
     float right
   }
   padding: 10px 0 10px 20px;
 
-  &:hover{
+  &:hover {
     background: #e70303
   }
 }
@@ -66,9 +67,10 @@ const showChildren = () => {
 const handleClick = () => {
   if (props.item.children) {
     showChildren()
-  } else {
-    router.push(props.item.path);
   }
+  router.push({
+    name: props.item.name
+  });
 }
 
 
