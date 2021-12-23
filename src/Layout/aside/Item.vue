@@ -36,7 +36,7 @@
   </div>
 </template>
 <script setup>
-import {defineProps, ref} from "vue";
+import {ref} from "vue";
 import Item from "./Item.vue";
 import router from "../../router";
 
