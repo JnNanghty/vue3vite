@@ -19,6 +19,11 @@
     height 120px;
     border-bottom 1px solid #000000
   }
+
+  .main-container{
+    overflow scroll
+    height: calc(100vh - 122px);
+  }
 }
 
 .component-fade-enter-active,

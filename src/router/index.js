@@ -43,6 +43,18 @@ const routes = [
             meta: {name: '大力', icon: '', hidden: false}
           }
         ]
+      },
+      {
+        path: 'potionCherry',
+        name: 'potionCherry',
+        component: () => import('../view/Potion/Cherry.vue'),
+        meta: {name: '看看P', icon: ''}
+      },
+      {
+        path: 'potionBeen',
+        name: 'potionBeen',
+        component: () => import('../view/Potion/Been.vue'),
+        meta: {name: '看看事件', icon: ''}
       }
     ]
   },
